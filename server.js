@@ -28,7 +28,7 @@ async function start() {
         await mongoose.connect(
             process.env.MONGODB_URI
         )
-        app.listen(3001, () => console.log('Сервер успешно запущен'))
+        app.listen(PORT, () => console.log('Сервер успешно запущен'))
     } catch (error) {
         console.log(error)
     }
